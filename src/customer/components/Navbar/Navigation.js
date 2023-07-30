@@ -261,7 +261,7 @@ export default function Navigation() {
                                 <Link to="/">
                                     <span className="sr-only">Your Company</span>
                                     <img
-                                        src="https://res.cloudinary.com/ddkso1wxi/image/upload/v1675919455/Logo/Copy_of_Zosh_Academy_nblljp.png"
+                                        src="https://static.vecteezy.com/system/resources/thumbnails/006/897/801/small/eagle-design-for-logo-icon-vector.jpg"
                                         alt="Shopwithzosh"
                                         className="h-8 w-8 mr-2"
                                     />
@@ -402,7 +402,7 @@ export default function Navigation() {
 
                             <div className="ml-auto flex items-center">
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                                    {auth.user ? (
+                                    {auth.user? (
                                         <div>
                                             <Avatar
                                                 className="text-white"
@@ -419,15 +419,7 @@ export default function Navigation() {
                                             >
                                                 {auth.user?.firstName[0].toUpperCase()}
                                             </Avatar>
-                                            {/* <Button
-                        id="basic-button"
-                        aria-controls={open ? "basic-menu" : undefined}
-                        aria-haspopup="true"
-                        aria-expanded={open ? "true" : undefined}
-                        onClick={handleUserClick}
-                      >
-                        Dashboard
-                      </Button> */}
+                                           
                                             <Menu
                                                 id="basic-menu"
                                                 anchorEl={anchorEl}
