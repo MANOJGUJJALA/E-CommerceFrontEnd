@@ -23,7 +23,6 @@ const CustomerRoutes = () => {
                     <Route path="/" element={<Homepage />}></Route>
                     <Route path="/home" element={<Homepage />}></Route>
 
-
                 </Routes>
             </ThemeProvider>
 

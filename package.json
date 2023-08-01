@@ -7,13 +7,16 @@
     "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
+    "@mui/icons-material": "^5.14.1",
     "@mui/material": "^5.14.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "apexcharts": "^3.41.0",
     "axios": "^1.4.0",
+    "mdi-material-ui": "^7.7.0",
     "react": "^18.2.0",
+    "react-alice-carousel": "^2.7.1",
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
@@ -45,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }
