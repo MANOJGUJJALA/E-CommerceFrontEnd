@@ -6,6 +6,7 @@ import Contact from "../pages/Contact"
 import About from "../pages/About"
 import PrivacyPolicy from "../pages/Privacy-policy"
 import TearmsCondition from "../pages/TermandCondition"
+import Product from "../customer/components/Product/Product/Product"
 
 
 import {  customerTheme } from "../Admin/Theme/customtheme";
@@ -34,7 +35,8 @@ const CustomerRoutes = () => {
                     <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
                     <Route path="/terms-conditions" element={<TearmsCondition />}></Route>
 
-                    
+                    <Route path="/:lavelOne/:lavelTwo/:lavelThree" element={<Product />}></Route>
+
 
                 </Routes>
             </ThemeProvider>
