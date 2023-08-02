@@ -7,7 +7,7 @@ import About from "../pages/About"
 import PrivacyPolicy from "../pages/Privacy-policy"
 import TearmsCondition from "../pages/TermandCondition"
 import Product from "../customer/components/Product/Product/Product"
-
+import Cart from "../customer/components/Cart/Cart"
 
 import {  customerTheme } from "../Admin/Theme/customtheme";
 
@@ -37,6 +37,8 @@ const CustomerRoutes = () => {
 
                     <Route path="/:lavelOne/:lavelTwo/:lavelThree" element={<Product />}></Route>
 
+
+                    <Route path="/cart" element={<Cart />}></Route>
 
                 </Routes>
             </ThemeProvider>
