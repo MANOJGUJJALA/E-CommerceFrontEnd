@@ -59,13 +59,13 @@ export default function Navigation() {
   };
 
   useEffect(() => {
-    if (auth.user){ 
+    if (auth?.user){ 
       handleClose();
     }
     if(location.pathname==="/login" || location.pathname==="/register"){
       navigate(-1)
     }
-  }, [auth.user]);
+  }, [auth?.user]);
 
   const handleLogout = () => {
     handleCloseUserMenu();
@@ -406,7 +406,7 @@ export default function Navigation() {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  {auth.user ? (
+                  {auth?.user ? (
                     <div>
                       <Avatar
                         className="text-white"
@@ -421,7 +421,7 @@ export default function Navigation() {
                           cursor: "pointer",
                         }}
                       >
-                        {auth.user?.firstName[0].toUpperCase()}
+                        {auth?.user?.firstName[0].toUpperCase()}
                       </Avatar>
                      
                       <Menu

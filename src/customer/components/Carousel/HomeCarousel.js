@@ -27,7 +27,7 @@ const HomeCarousel = () => {
           items={item}
           autoPlay
           infinite
-          autoPlayInterval={1000}
+          autoPlayInterval={1500}
           disableButtonsControls
         />
       );

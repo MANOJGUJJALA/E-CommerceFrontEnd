@@ -20,10 +20,11 @@ import {
   const authReducer = (state = initialState, action) => {
     switch (action.type) {
       case REGISTER_REQUEST:
+        return {...state}
       case LOGIN_REQUEST:
         return { ...state, isLoading: true, error: null };
       case REGISTER_SUCCESS:
-        return { ...state, isLoading: false };
+        return { ...state, isLoading: false,error:null };
       case REGISTER_FAILURE:
       case LOGIN_FAILURE:
         return { ...state, isLoading: false, error: action.payload };

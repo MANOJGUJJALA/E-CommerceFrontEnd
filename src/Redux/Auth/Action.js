@@ -25,6 +25,7 @@ export const register = userData => async dispatch => {
     const user = response.data;
     if(user.jwt) localStorage.setItem("jwt",user.jwt)
     console.log("registerr :",user)
+    
     dispatch(registerSuccess(user));
   } catch (error) {
     dispatch(registerFailure(error.message));
@@ -56,6 +57,7 @@ export const getUser = (token) => {
   return async (dispatch) => {
     dispatch({ type: GET_USER_REQUEST });
     try {
+      console.log("---","calling ",token);
       const response = await axios.get(`${API_BASE_URL}/api/users/profile`,{
         headers:{
           "Authorization":`Bearer ${token}`

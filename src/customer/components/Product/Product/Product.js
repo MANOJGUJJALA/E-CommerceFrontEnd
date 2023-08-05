@@ -133,13 +133,13 @@ export default function Product() {
     navigate({ search: `?${query}` });
   };
 
-//   useEffect(() => {
-//     if (customersProduct.loading) {
-//       setIsLoaderOpen(true);
-//     } else {
-//       setIsLoaderOpen(false);
-//     }
-//   }, [customersProduct.loading]);
+  useEffect(() => {
+    if (customersProduct.loading) {
+      setIsLoaderOpen(true);
+    } else {
+      setIsLoaderOpen(false);
+    }
+  }, [customersProduct.loading]);
 
   return (
     <div className="bg-white -z-20 ">
@@ -473,7 +473,7 @@ export default function Product() {
         <section className="w-full px-[3.6rem]">
           <div className="mx-auto px-4 py-5 flex justify-center shadow-lg border rounded-md">
             <Pagination
-              count={0}
+              count={customersProduct.products?.totalPages}
             //   customersProduct.products?.totalPages
               color="primary"
               className=""

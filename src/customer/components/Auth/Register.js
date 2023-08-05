@@ -10,11 +10,14 @@ export default function RegisterUserForm({ handleNext }) {
   const dispatch=useDispatch();
   const [openSnackBar,setOpenSnackBar]=useState(false);
   const { auth } = useSelector((store) => store);
-  const handleClose=()=>setOpenSnackBar(false);
 
+  const handleClose=()=>setOpenSnackBar(false);
+  
   const jwt=localStorage.getItem("jwt");
+  
 
 useEffect(()=>{
+  // localStorage.clear()
   if(jwt){
     dispatch(getUser(jwt))
   }
@@ -23,8 +26,8 @@ useEffect(()=>{
 
 
   useEffect(() => {
-    if (auth.user || auth.error) setOpenSnackBar(true)
-  }, [auth.user]);
+    if (auth?.user || auth?.error) setOpenSnackBar(true)
+  }, [auth?.user]);
   
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -39,6 +42,8 @@ useEffect(()=>{
     }
     console.log("user data",userData);
     dispatch(register(userData))
+
+
   
   };
 
@@ -113,7 +118,7 @@ useEffect(()=>{
 
 <Snackbar open={openSnackBar} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-          {auth.error?auth.error:auth.user?"Register Success":""}
+          {auth?.error?auth?.error:auth?.user?"Register Success":""}
         </Alert>
       </Snackbar>
      
