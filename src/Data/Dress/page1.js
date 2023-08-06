@@ -1110,6 +1110,6 @@ export const dressPage1 = [
       "thirdLavelCategory": "Dress",
       "description":
         "Make a statement with this stylish purple A-line dress from ZWERLON. Made with high-quality fabric, this dress is perfect for any occasion."
-    },
+    }
   ];
   
