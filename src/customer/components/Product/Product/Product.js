@@ -473,7 +473,7 @@ export default function Product() {
         <section className="w-full px-[3.6rem]">
           <div className="mx-auto px-4 py-5 flex justify-center shadow-lg border rounded-md">
             <Pagination
-              count={customersProduct.products?.totalPages}
+              count={customersProduct?.products?.totalPages}
             //   customersProduct.products?.totalPages
               color="primary"
               className=""
