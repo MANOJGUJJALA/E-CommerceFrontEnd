@@ -10,6 +10,7 @@ const api = axios.create({
   baseURL: API_BASE_URL,
 });
 
+
 const token = localStorage.getItem('jwt');
 
 api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
