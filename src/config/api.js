@@ -3,6 +3,7 @@ import axios from 'axios';
 const LOCALHOST='https://fashion-finder-backend.onrender.com'
 
 // http://localhost:8081
+// https://fashion-finder-backend.onrender.com
 
 export const API_BASE_URL = LOCALHOST
 
