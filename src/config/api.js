@@ -1,9 +1,10 @@
 
 import axios from 'axios';
-const LOCALHOST='https://fashion-finder-backend.onrender.com'
+// const LOCALHOST='http://localhost:8080'
+const LOCALHOST='https://fashionfinderbackend.onrender.com'
 
-// http://localhost:8081
-// https://fashion-finder-backend.onrender.com
+// http://localhost:8080
+// https://fashionfinderbackend.onrender.com
 
 export const API_BASE_URL = LOCALHOST
 
